@@ -7,10 +7,26 @@
 </head>
 <body>
     <h1>Rock Paper Scissors Game</h1>
+    let playerMove=0;
     
     <p>Choose Your move:</p>
-    <button>Rock</button>
-    <button>Paper</button>
-    <button>Scissors</button>
+    <button onclick="
+        let computerMove=0;
+       computerMove += Math.random();
+       console.log(computerMove);
+       
+       if (computerMove>=0.33 && computerMove<0.66){
+            alert('You chose Rock. Computer chose Paper. You loose!');
+       }else if(computerMove>=0.66){
+        alert('You chose Rock. Computer chose Scissors. You Win');
+       }
+       else {
+
+        alert('You chose Rock. Computer chose Rock. Its a tie!');
+       }
+
+    ">Rock</button>
+    <button onclick="">Paper</button>
+    <button onclick="">Scissors</button>
 </body>
 </html>
