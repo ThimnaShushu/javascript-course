@@ -42,7 +42,19 @@
        }
     ">Paper</button>
     <button onclick="
-        
+        let computer=0;
+       computer += Math.random();
+       console.log(computer);
+
+       if (computer>=0.33 && computer<0.66){
+            alert('You chose Paper. Computer chose Paper. Its a tie!');
+       }else if(computer>=0.66){
+        alert('You chose Paper. Computer chose Scissors. You Lose');
+       }
+       else {
+
+        alert('You chose Paper. Computer chose Rock. You Win!');
+       }
     
     ">Scissors</button>
 </body>
