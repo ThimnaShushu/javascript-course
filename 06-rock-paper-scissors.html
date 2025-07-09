@@ -13,9 +13,9 @@
     <button onclick="
         let computerMove=0;
        computerMove += Math.random();
-       console.log(computerMove);
-       
-       if (computerMove>=0.33 && computerMove<0.66){
+       console.log(computermove);
+
+       if (computermove>=0.33 && computermove<0.66){
             alert('You chose Rock. Computer chose Paper. You loose!');
        }else if(computerMove>=0.66){
         alert('You chose Rock. Computer chose Scissors. You Win');
@@ -26,7 +26,24 @@
        }
 
     ">Rock</button>
-    <button onclick="">Paper</button>
-    <button onclick="">Scissors</button>
+    <button onclick="
+        let computermove=0;
+       computermove += Math.random();
+       console.log(computermove);
+
+       if (computermove>=0.33 && computermove<0.66){
+            alert('You chose Paper. Computer chose Paper. Its a tie!');
+       }else if(computermove>=0.66){
+        alert('You chose Paper. Computer chose Scissors. You Lose');
+       }
+       else {
+
+        alert('You chose Paper. Computer chose Rock. You Win!');
+       }
+    ">Paper</button>
+    <button onclick="
+        
+    
+    ">Scissors</button>
 </body>
 </html>
